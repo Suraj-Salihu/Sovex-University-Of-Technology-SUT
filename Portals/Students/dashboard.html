@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - SUT</title>
+    <link rel="stylesheet" href="../../css/style2.css">
+    <link rel="stylesheet" href="../../css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard">
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-info">
+                    <img src="../../images/student-avatar.jpg" alt="Student Avatar">
+                    <h3>Amina Mohammed</h3>
+                    <p>Software Engineering</p>
+                    <p>2021/SE/001</p>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="active">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.html">
+                            <i class="fas fa-book"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registration.html">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Registration</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="results.html">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payments.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Payments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages.html">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../../index.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation -->
+            <header class="dashboard-header">
+                <div class="flex">
+                    <h1>Student Dashboard</h1>
+                    <div class="header-actions">
+                        <button class="btn btn-sm btn-outline">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </button>
+                        <button class="btn btn-sm btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            <span class="badge">5</span>
+                        </button>
+                    </div>
+                </div>
+                <nav class="breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <span>/</span>
+                    <a href="dashboard.html">Dashboard</a>
+                </nav>
+            </header>
+
+            <!-- Dashboard Widgets -->
+            <div class="dashboard-widgets grid grid-3">
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Academic Status</h3>
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="widget-body">
+                        <p><strong>Level:</strong> 300</p>
+                        <p><strong>Semester:</strong> Second</p>
+                        <p><strong>CGPA:</strong> 4.52</p>
+                        <p><strong>Status:</strong> <span class="text-success">Active</span></p>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Registration Status</h3>
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="widget-body">
+                        <p><strong>Current Semester:</strong> Registered</p>
+                        <p><strong>Courses Registered:</strong> 6</p>
+                        <p><strong>Outstanding Fees:</strong> ₦25,000</p>
+                        <a href="registration.html" class="btn btn-sm btn-primary">View Registration</a>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Upcoming Events</h3>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="widget-body">
+                        <div class="event">
+                            <p><strong>Mid-Semester Tests</strong></p>
+                            <p>March 15 - 20, 2023</p>
+                        </div>
+                        <div class="event">
+                            <p><strong>Tech Summit 2023</strong></p>
+                            <p>April 5, 2023</p>
+                        </div>
+                        <a href="../../news.html" class="btn btn-sm btn-outline">View All</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activities -->
+            <section class="dashboard-section">
+                <h2 class="section-title">Recent Activities</h2>
+                <div class="activity-list">
+                    <div class="activity">
+                        <div class="activity-icon">
+                            <i class="fas fa-book text-primary"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>Registered for <strong>Software Engineering</strong> course</p>
+                            <small>2 days ago</small>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">
+                            <i class="fas fa-money-bill-wave text-success"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>Payment of ₦50,000 for school fees received</p>
+                            <small>1 week ago</small>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">
+                            <i class="fas fa-chart-bar text-info"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>First semester results for 2022/2023 session released</p>
+                            <small>2 weeks ago</small>
+                        </div>
+                    </div>
+                    <div class="activity">
+                        <div class="activity-icon">
+                            <i class="fas fa-envelope text-warning"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p>New message from <strong>Dr. Smith</strong> about course assignment</p>
+                            <small>3 weeks ago</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="dashboard-section">
+                <h2 class="section-title">Quick Actions</h2>
+                <div class="quick-actions grid grid-4">
+                    <a href="courses.html" class="quick-action">
+                        <i class="fas fa-book"></i>
+                        <span>View Courses</span>
+                    </a>
+                    <a href="registration.html" class="quick-action">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Course Registration</span>
+                    </a>
+                    <a href="results.html" class="quick-action">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Check Results</span>
+                    </a>
+                    <a href="payments.html" class="quick-action">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Make Payment</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/dashboard.js"></script>
+</body>
+</html>

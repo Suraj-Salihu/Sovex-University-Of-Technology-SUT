@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Login - Sovex University of Technology</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container flex">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +234 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> info@sut.edu.ng</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container flex">
+            <div class="logo">
+                <h1><span class="text-primary">SUT</span></h1>
+                <p>Where Technology Meets Excellence</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../faculties.html">Faculties</a></li>
+                    <li><a href="../admissions.html">Admissions</a></li>
+                    <li><a href="../news.html">News & Events</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="login.html" class="btn btn-outline active">Portal Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login py-4">
+        <div class="container flex">
+            <div class="login-image">
+                <img src="../images/login-bg.jpg" alt="SUT Campus">
+            </div>
+            <div class="login-form">
+                <h2>Portal Login</h2>
+                <p>Access your SUT account to manage your academic activities</p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group flex">
+                        <div>
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="forgot-password.html">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    
+                    <div class="login-options">
+                        <p>Or login as:</p>
+                        <div class="flex">
+                            <a href="#" class="btn btn-outline">Student</a>
+                            <a href="#" class="btn btn-outline">Lecturer</a>
+                            <a href="#" class="btn btn-outline">Admin</a>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-2">
+                        <p>Don't have an account? <a href="../admissions.html">Apply now</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container grid grid-4">
+            <div class="footer-about">
+                <h3>Sovex University of Technology</h3>
+                <p>Where Technology Meets Excellence</p>
+                <p>KM 10, Bauchi-Jos Road<br>Bauchi State, Nigeria</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About SUT</a></li>
+                    <li><a href="../faculties.html">Faculties</a></li>
+                    <li><a href="../admissions.html">Admissions</a></li>
+                    <li><a href="../news.html">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Portals</h3>
+                <ul>
+                    <li><a href="student/dashboard.html">Student Portal</a></li>
+                    <li><a href="lecturer/dashboard.html">Lecturer Portal</a></li>
+                    <li><a href="admin/dashboard.html">Admin Portal</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +234 123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@sut.edu.ng</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-2">
+            <p>&copy; <span id="current-year">2023</span> Sovex University of Technology. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
